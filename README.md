@@ -4,8 +4,8 @@
 This code implements real-time Facial Expression Recognition using a pre-trained convolutional neural network (CNN). It utilizes OpenCV for face detection, extracts facial features, and feeds them into the CNN model to predict emotions such as anger, disgust, fear, happiness, neutral, sad, and surprise. The predicted emotion labels are overlaid on the webcam feed, providing live feedback on detected emotions.
 
 ## Team Members:
-### Gurumurthy S,
-### Haravasu S
+### ● Gurumurthy S,
+### ● Haravasu S
 
 ## Pre-Requirements:
 
@@ -15,14 +15,14 @@ This code implements real-time Facial Expression Recognition using a pre-trained
 
 ## Project Overview:
 
-This code is a Python script for real-time facial emotion recognition using a pre-trained convolutional neural network (CNN) model.
-Here's a brief explanation of each part:
+This code is a Python script for real-time facial emotion recognition using a pre-trained convolutional neural network (CNN) model.<br>
+Here's a brief explanation of each part:<br>
 
 ### Imports:
 
-● cv2: OpenCV library for computer vision tasks.
-● model_from_json from Keras: to load the trained model architecture from a JSON file.
-● numpy: for numerical operations.
+● cv2: OpenCV library for computer vision tasks.<br>
+● model_from_json from Keras: to load the trained model architecture from a JSON file.<br>
+● numpy: for numerical operations.<br>
   
 ### Loading the Model:
 
@@ -67,22 +67,22 @@ labels = {0 : 'angry', 1 : 'disgust', 2 : 'fear', 3 : 'happy', 4 : 'neutral', 5 
 
 ### Main Loop:
 
-● A while loop captures frames from the webcam continuously.
-● Inside the loop, it converts the captured frame to grayscale and detects faces using the Haar cascade classifier.
+● A while loop captures frames from the webcam continuously.<br>
+● Inside the loop, it converts the captured frame to grayscale and detects faces using the Haar cascade classifier.<br>
 ```python
 gray=cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
 ```
-● For each detected face, it extracts the face region, resizes it to the required input size for the model (48x48 pixels), preprocesses it, and then passes it through the model.
+● For each detected face, it extracts the face region, resizes it to the required input size for the model (48x48 pixels), preprocesses it, and then passes it through the model.<br>
 ```python
 image = cv2.resize(image,(48,48))
 ```
-● The predicted emotion label is obtained by finding the maximum probability output from the model's prediction.
+● The predicted emotion label is obtained by finding the maximum probability output from the model's prediction.<br>
 ```pyton
 pred = model.predict(img)
 ```
-● The predicted emotion label is then overlaid on the original frame using OpenCV's putText function.
-● The processed frame with the predicted emotion label is displayed using imshow.
-● The loop continues until the user presses the 'c' key.
+● The predicted emotion label is then overlaid on the original frame using OpenCV's putText function.<br>
+● The processed frame with the predicted emotion label is displayed using imshow.<br>
+● The loop continues until the user presses the 'c' key.<br>
 ```python
 if cv2.waitKey(1) & 0xFF==ord("c"):
     break
@@ -90,10 +90,6 @@ if cv2.waitKey(1) & 0xFF==ord("c"):
 Overall, this script continuously captures video frames from the webcam, detects faces in each frame, predicts the emotion associated with each detected face using the pre-trained CNN model, and overlays the predicted emotion label on the video feed in real-time.
 
 ## Output Images:
-![output_1](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/a8169b0a-d625-4b8f-a8c3-20dbf0f87648)
-![output_2](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/80dcbac7-5a18-414e-8ad6-543191c95ef5)
-![output_5](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/512b5ec2-d9a8-4931-9ec4-d4ee854e7e09)
-
 ![output_5](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/8bf72c62-0ed2-4204-ab82-e4a839db2e3b)
 ![output_2](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/108df73f-1c6f-44be-820d-05308dccd8e0)
 ![output_1](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/0e9371f8-16f4-43bb-88bf-6acab583e169)
