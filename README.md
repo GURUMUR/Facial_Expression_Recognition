@@ -90,7 +90,7 @@ if cv2.waitKey(1) & 0xFF==ord("c"):
 Overall, this script continuously captures video frames from the webcam, detects faces in each frame, predicts the emotion associated with each detected face using the pre-trained CNN model, and overlays the predicted emotion label on the video feed in real-time.
 
 ## Output Images:
-![output_5](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/8bf72c62-0ed2-4204-ab82-e4a839db2e3b) with <img src="https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/8bf72c62-0ed2-4204-ab82-e4a839db2e3b" width="100" height = "100"
+<img src="https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/8bf72c62-0ed2-4204-ab82-e4a839db2e3b" width="100" height = "100">
 ![output_2](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/108df73f-1c6f-44be-820d-05308dccd8e0)
 ![output_1](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/0e9371f8-16f4-43bb-88bf-6acab583e169)
 ![output_6](https://github.com/GURUMUR/Facial_Expression_Recognition/assets/144895197/cfbff3fb-f4bb-4042-9b16-47ae16d87ca7)
