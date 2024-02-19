@@ -16,7 +16,7 @@ This code implements real-time Facial Expression Recognition using a pre-trained
 ## Project Overview:
 
 This code is a Python script for real-time facial emotion recognition using a pre-trained convolutional neural network (CNN) model.<br>
-Here's a brief explanation of each part:<br>
+
 
 ### Imports:
 
