@@ -9,9 +9,9 @@ This code implements real-time Facial Expression Recognition using a pre-trained
 
 ## Pre-Requirements:
 
-● Installed Python environment with OpenCV and Keras libraries.
-● Trained model files ('facialemotionmodel.json' and 'facialemotionmodel.h5') available.
-● Access to a webcam for real-time video input.
+● Installed Python environment with OpenCV and Keras libraries.<br>
+● Trained model files ('facialemotionmodel.json' and 'facialemotionmodel.h5') available.<br>
+● Access to a webcam for real-time video input.<br>
 
 ## Project Overview:
 
